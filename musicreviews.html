@@ -1,0 +1,133 @@
+<!--MUSIC REVIEWS WEBPAGE-->
+<!DOCTYPE html>
+<html>
+
+<!--HEAD-->
+	<head>
+		
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Analysis of Music and Music History"/>
+  		<meta name="keywords" content="music,history,reviews,analysis,culture"/>
+  		<meta name="author" content="Toni Amoi"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>
+		Music Reviews | The Soulful NonProphet
+		</title>
+
+		<link href="styles.css" type="text/css" rel="stylesheet"/>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+		
+	</head>	
+
+<!--BODY-->
+	<body>
+		
+		<div id="container">
+
+<!--NAV-->
+			<nav>
+				<button id="menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul id="menu-links" class="dropdown">
+					<a href="index.html"><li class="boldlave">HOME</li></a>
+					<a href="about.html"><li class="boldlave">ABOUT</li></a>
+					<a href="musicreviews.html"><li class="boldlave">MUSIC REVIEWS</li></a>
+					<a href="musichistory.html"><li class="boldlave">MUSIC HISTORY</li></a>
+					<a href="musicnews.html"><li class="boldlave">MUSIC NEWS</li></a>
+					<a href="miscrants.html"><li class="boldlave">MISC. RANTS</li></a>
+				</ul>
+			</nav>
+
+<!--MAIN-->
+			<main id="top">
+			
+<!--SECTIONS-->			
+			
+			<section id="reviewsmus1" class="box">
+				<div id="fitphoto1">
+				<a href="reviews/jbamerikkkareview.html"><img id="photo1" src="images/jbad.jpg" alt="Joey Badass's All Amerikkkan Badass"/></a>
+			</div>
+
+			<article>
+				<h3>Album Review and Analysis</h3><br/>
+				<a href="reviews/jbamerikkkareview.html"><p>JOEY BADA$$ <em>ALL AMERIKKKAN BADA$$</em></p></a><br/>
+				<p class="boxmargin">Many people believe hip-hop is essentially dead. With the onset of wildly popular “mumble rap” artists like Lil Uzi Vert, Playboi Carti, and Lil Yatchy, many hip-hop/rap fans feel the future of the genre is threatened.</p>
+			</article>
+
+			</section>
+
+
+			<section id="reviewsmus1" class="box">
+
+			<div id="fitphoto1">
+				<a href="reviews/kldamnreview.html"><img id="photo1" src="images/kendricklamardamn.jpg" alt="Kendrick Lamar's DAMN"/></a>
+			</div>
+
+			<article>
+				<h3>Album Review and Analysis</h3><br/>
+				<a href="reviews/kldamnreview.html"><p>KENDRICK LAMAR'S <em>DAMN</em></p></a><br/>
+				<p class="boxmargin">Many times, with the release of a new album, the hype is so intense that by the time the album releases, your hopes are highs and you expect so much that you are bound to be disappointed.</p>
+			</article>
+
+			</section>
+
+			<section id="reviewsmus1" class="box">
+
+			<div id="fitphoto1">
+				<a href="reviews/szactrlreview.html"><img id="photo1" src="images/szactrlalbumcover.jpg" alt="SZA's CTRL"/></a>
+			</div>
+
+			<article>
+				<h3>Album Review and Analysis</h3><br/>
+				<a href="reviews/szactrlreview.html"><p>SZA'S <em>CTRL</em></p></a><br/>
+				<p class="boxmargin">You may know SZA as the up and coming singer-songwriter who was notably featured on the opening track, "Consideration," off of Rihanna's <em>ANTI</em> album back in 2016. </p>
+			</article>
+
+			</section>
+
+
+			</main>
+		
+<!--FOOTER-->
+			<footer> 
+
+			<details>
+				<summary>&copy; 2017</summary>
+				<p> By The Soulful NonProphet. All Rights Reserved.</p>
+				<p> All written code, content, and opinions on this website are property of The Soulful NonProphet. <br/>
+				Any external images, links, videos, and audio are not property of The Soulful NonProphet and are <br/>
+				used for educational and entertainment purposes only; not for sale or redistribution. <br/></p>
+			</details><br/>
+
+			<a href="#top" id="boldlaven" class="smoothScroll">Top</a> 
+				<a href="https://www.facebook.com/soulfulnonprophet/" target="_blank"><img class="socialmedia" src="images/fbookicon.png"/></a>
+				<a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="images/instacon.png"/></a>
+				<a href="https://twitter.com/SoulfulNProphet" target="_blank"><img class="socialmedia" src="images/twitlogo.png"/></a>
+
+			</footer>
+
+		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/smoothscroll.js">
+		</script>
+		<script>
+			$(document).ready(function() {
+				var $menuButton = $('#menu-button')
+				var $menuLinks = $('#menu-links')
+
+				$menuButton.on('click', function(e) {
+					$menuLinks.slideToggle()
+					$menuButton.toggleClass('close')
+				})
+			})
+		</script>
+		
+	</body>
+
+
+</html>

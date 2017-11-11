@@ -1,0 +1,552 @@
+/* 
+#5438dc - Majorelle Blue
+#70256a - Midnight 
+#8dd3d0 - Middle Blue Green
+#9c87bf - African Violet
+#ffffff - White
+#000000 - Black
+*/
+
+
+/* RESET RULE */
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*GENERAL FORMATTING*/
+
+@font-face{
+	font-family: 'Blessed';
+	src: url('fonts/Blessed.ttf') format('truetype');
+	} 
+
+p{
+	font-family: 'Alice', serif;
+}
+
+a{
+	font-family: 'Alice', serif;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: underline;
+}
+
+a:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	text-decoration: none;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family:'Blessed';
+	text-shadow: 2px 2px #8dd3d0;
+}
+
+ul li{
+	font-family: 'Alice', serif;
+}
+
+
+body{
+	background-image: url('images/bkgrdimgsnp.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+article{
+	padding:20px;
+}
+
+
+.box{
+	border: 3px solid black;
+	width: 280px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin: 10px;
+}
+
+.boldlave{
+	color:#9C87BF;
+	font-weight: bold;
+}
+
+.previous{
+	background-color: #9C87BF;
+	padding: 5px;
+	border: 3px solid black;
+	margin-top: 15px;
+	
+}
+
+.next{
+	background-color: #9C87BF;
+	padding: 5px;
+	border: 3px solid black;
+	margin-top: 15px;
+	
+}
+
+.pmargin{
+	margin-bottom: 30px;
+}
+
+.boxmargin{
+	margin-bottom: 5px;
+}
+
+#boldlaven{
+	color:#9C87BF;
+	font-weight: bold;
+}
+
+#youtube{
+	background-color: white;
+	border: 3px solid black;
+	padding:15px;
+	width:560px;
+	height:400px;
+	margin:auto;
+	margin-top: 25px;
+}
+
+#video{
+	margin:auto;
+}
+
+
+
+/*NAV*/
+
+nav{
+	background-color: #5438dc;
+	background-image: url('images/headerimagesnp.png');
+	background-repeat: no-repeat;
+	background-size: auto 80%;
+	background-position: 0 center;
+	padding: 10px;
+    top: 0;
+    width: 100%;
+	border-bottom: 3px solid black;
+	position: fixed;
+	z-index: 10;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#menu-button {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	width: 40px;
+	height: 25px;
+	background-color: rgba(0, 0, 0, 0);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	cursor: pointer;
+}
+
+#menu-button span {
+	display: block;
+	position: relative;
+	height: 3px;
+	width: 40px;
+	background-color: #fff;
+	-webkit-transition: all 400ms;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
+
+#menu-button.close span:nth-of-type(1) {
+	-webkit-transform-origin: 0% 0%;
+	    -ms-transform-origin: 0% 0%;
+	        transform-origin: 0% 0%;
+	-webkit-transform: rotate(45deg) translateY(-3px);
+	    -ms-transform: rotate(45deg) translateY(-3px);
+	        transform: rotate(45deg) translateY(-3px);
+}
+#menu-button.close span:nth-of-type(2) {
+	opacity: 0;
+}
+#menu-button.close span:nth-of-type(3) {
+	-webkit-transform-origin: 0% 100%;
+	    -ms-transform-origin: 0% 100%;
+	        transform-origin: 0% 100%;
+	-webkit-transform: rotate(-45deg) translateY(3px);
+	    -ms-transform: rotate(-45deg) translateY(3px);
+	        transform: rotate(-45deg) translateY(3px);
+}
+
+nav ul {
+	display: none;
+	list-style-type: none;
+	text-align: center;
+	background-color: #444;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: calc(100% + 3px);
+	padding: 10px;
+}
+
+nav ul li{
+	display: block;
+	padding: 10px;
+}
+
+
+/*MAIN*/
+
+main{
+	padding-top: 120px;
+	padding-bottom: 600px;
+	text-align: center;
+}
+
+/*INDEX*/
+
+#musicrev{
+	background-color: white;
+	background-image: url('images/jbad.jpg') ; 
+	background-size: cover;
+	background-repeat: no-repeat;  
+	color:white;
+	-webkit-box-shadow: 10px 10px black;
+	        box-shadow: 10px 10px black;
+	height: 280px;
+	
+}
+
+
+#musicrev:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+#musichis, #ureleases, #lreleases{
+	background-color: white;	
+
+}
+
+
+.boldalbum{
+	font-weight: bold;
+}
+
+/*ABOUT*/
+#about{
+	background-color: #9c87bf;
+	padding: 10px;
+	width: 550px;
+	height: 700px; 
+	
+}
+
+p.bold{
+	font-weight: bold;
+}
+
+
+/*MUSIC REVIEWS*/
+#reviewsmus1{
+	background-color: white;
+	padding: 10px;
+	width: 600px;
+	height: 250px; 
+	margin-bottom: 30px;
+	display: inline-block;
+	
+}
+
+#photo1{
+	width: 200px;
+	height: 200px;
+	float:left;
+	-webkit-box-shadow: 5px 5px black;
+	        box-shadow: 5px 5px black; 
+}
+
+
+#photo1:hover{
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+#fitphoto1{
+	width:250px;
+	height: 250px;
+	float:left;
+}
+
+#textreview{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 2000px; 
+	margin:auto;
+	border: 3px solid black;
+
+}
+
+#textreview1{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 2160px; 
+	margin:auto;
+	border: 3px solid black;
+
+}
+
+#textreview2{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 2100px; 
+	margin:auto;
+	border: 3px solid black;
+}
+
+
+
+
+.reviewartpho{
+	padding:15px;
+	width:300px;
+	height:300px;
+}
+
+
+
+/*MUSIC HISTORY*/
+#historymus1{
+	background-color: white;
+	padding: 10px;
+	width: 600px;
+	height: 275px; 
+	margin-bottom: 30px;
+	display: inline-block;
+	
+}
+
+#hisphoto1{
+	width: 270px;
+	height: 200px;
+	float:left;
+	-webkit-box-shadow: 5px 5px black;
+	        box-shadow: 5px 5px black;
+	margin-right: 15px;
+}
+
+#hisphoto1:hover{
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+#hisfitphoto1{
+	width:300px;
+	height: 250px;
+	float:left;
+}
+
+.historyartpho{
+	padding:15px;
+	width:400px;
+	height:250px;
+}
+
+#texthistory{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 1500px; 
+	margin:auto;
+	border: 3px solid black;
+}
+
+#texthistory1{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 1400px; 
+	margin:auto;
+	border: 3px solid black;
+}
+
+/*MUSIC NEWS*/
+#musicnews{
+	background-color: #ffffff;
+	padding: 10px;
+	width: 600px;
+	height: 220px; 
+	margin-bottom:30px;
+	display: inline-block;
+
+	
+}
+
+#textnews{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 700px; 
+	margin:auto;
+	border: 3px solid black;
+
+}
+
+.mnewsartpho{
+	padding:15px;
+	width:300px;
+	height:300px;
+}
+
+/*MISC. RANTS*/
+#miscrants1{
+	background-color: white;
+	padding: 10px;
+	width: 600px;
+	height: 250px; 
+	margin-bottom: 30px;
+	display: inline-block;
+
+	
+}
+
+#miscphoto1{
+	width: 270px;
+	height: 200px;
+	float:left;
+	-webkit-box-shadow: 5px 5px black;
+	        box-shadow: 5px 5px black;
+	margin-right: 15px;
+}
+
+#miscphoto1:hover{
+	opacity: 0.8;
+	filter: alpha(opacity=80);	
+}
+
+#fitmiscphoto1{
+	width:300px;
+	height: 250px;
+	float:left;
+}
+
+#textrant{
+	background-color: white;
+	padding: 10px;
+	width:600px;
+	height: 1100px; 
+	margin:auto;
+	border: 3px solid black;
+}
+
+.rantpho{
+	padding:15px;
+	width:400px;
+	height:250px;
+}
+
+
+
+/*FOOTER*/
+footer{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color:#5438dc;
+	padding: 10px;
+	color: #9c87bf;
+	bottom:0;
+	width:100%;
+	border-top: 3px solid black;
+}
+
+summary{
+	outline: none;
+}
+
+.socialmedia{
+	padding-left:25px;
+}
+
+/*Mobile Styles*/
+
+
+/*Tablet Styles*/
+@media all and (min-width: 768px) {
+	nav {
+		padding: 25px;
+	}
+
+	main {
+		padding-top: 160px;
+	}
+}
+
+
+
+/*Desktop Styles*/
+@media all and (min-width: 1024px) {
+	.box {
+		width: 400px;
+	}
+
+
+	#musicrev {
+		height: 405px;
+	}
+
+
+	#musichis, #lreleases, #ureleases{
+		height: 415px;
+	}
+
+
+
+	#menu-button {
+		display: none;
+	}
+
+	footer{
+		width: 100%;
+	}
+
+
+	nav ul {
+		display: block;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0);
+		position: relative;
+		width: 80%;
+		margin-left: auto;
+		padding: 10px;
+	}
+
+	nav ul li {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	main {
+		padding-top: 200px;
+	}
+}

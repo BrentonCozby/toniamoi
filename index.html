@@ -1,0 +1,145 @@
+<!--HOME INDEX WEBPAGE--> 
+<!DOCTYPE html>
+<html>
+
+<!--HEAD-->
+	<head>
+		
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Analysis of Music and Music History"/>
+  		<meta name="keywords" content="music,history,reviews,analysis,culture"/>
+  		<meta name="author" content="Toni Amoi"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>
+		Home | The Soulful NonProphet
+		</title>
+		<link href="styles.css" type="text/css" rel="stylesheet"/>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+
+	</head>	
+
+<!--BODY-->
+	<body>
+		
+		<div id="container">
+
+<!--NAV-->
+			<nav>
+				<button id="menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul id="menu-links" class="dropdown">
+					<a href="index.html"><li class="boldlave">HOME</li></a>
+					<a href="about.html"><li class="boldlave">ABOUT</li></a>
+					<a href="musicreviews.html"><li class="boldlave">MUSIC REVIEWS</li></a>
+					<a href="musichistory.html"><li class="boldlave">MUSIC HISTORY</li></a>
+					<a href="musicnews.html"><li class="boldlave">MUSIC NEWS</li></a>
+					<a href="miscrants.html"><li class="boldlave">MISC. RANTS</li></a>
+				</ul>
+			</nav>
+
+<!--MAIN-->
+			<main id="top">
+			
+<!--SECTIONS-->			
+				<a href="reviews/jbamerikkkareview.html" target="_blank"><section id="musicrev" class="box">
+
+					<article>
+					<h2>Latest Review:<br/></h2>
+					<p>JOEY BADA$$' 'ALL AMERIKKKAN BADASS'</p>
+					</article>
+
+				</section></a>
+
+				<section id="musichis" class="box">
+
+					<article>
+					<h2>Latest Posts</h2><br/>
+					<a href="news/luv2news.html" target="_blank"><p class="boldlave">LUV IS RAGE 2</p></a>
+					<a href="history/sjhrockhistory.html" target="_blank"><p class="boldlave">SCREAMIN' JAY HAWKINS</p></a><br/>
+					<h3>This Week in Music History</h3><br/>
+					<p>1997 September 4 - Pat Smear publicly announced that he would no longer be the guitarist for the Foo Fighters at the VMAs.</p><br/>
+					<p>1957 September 7 - Sam Cooke's single "You Send Me" was released. </p><br/>
+					<p>1995 September 11 - Janet Jackson's "Runaway" was the first single by a woman to make its debut in the top 10 of Billboard's Hot 100</p><br/>
+
+					</article>
+				</section>
+
+				<section id="lreleases" class="box"> 
+
+					<article>
+					<h2>Latest Releases</h2><br/>
+					<p class="boldalbum">August 4: Dead Cross</p>
+					<p>Dead Cross</p><br/>
+					<p class="boldalbum">August 11: 24-7 Rock Star Sh*t</p>
+					<p>The Cribs</p><br/>
+					<p class="boldalbum">August 18: Painted Ruins</p>
+					<p>Grizzly Bear</p><br/>
+					<p class="boldalbum">August 25: LUV is Rage 2</p>
+					<p>Lil Uzi Vert</p><br/>
+
+
+					</article>
+
+				</section>
+
+				<section id="ureleases" class="box"> 
+
+					<article>
+					<h2>Upcoming Releases</h2><br/>
+					<p class="boldalbum">August 25: Villains</p>
+					<p>Queens of the Stone Age</p><br/>
+					<p class="boldalbum">September 1: The Echo of Pleasure</p>
+					<p>The Pains of Being Pure at Heart</p><br/>
+					<p class="boldalbum">September 1: Omnion</p>
+					<p>Hercules & Love Affair</p><br/>
+					<p class="boldalbum">September 8: Shade</p>
+					<p>Living Colour</p><br/>
+					</article>
+				</section>
+			</main>
+
+		
+<!--FOOTER-->
+			<footer> 
+
+				<details>
+					<summary>&copy; 2017</summary>
+					<p> By The Soulful NonProphet. All Rights Reserved.</p>
+					<p> All written code, content, and opinions on this website are property of The Soulful NonProphet. <br/>
+					Any external images, links, videos, and audio are not property of The Soulful NonProphet and are <br/>
+					used for educational and entertainment purposes only; not for sale or redistribution. <br/></p>
+				</details><br/>
+
+				<a href="#top" id="boldlaven" class="smoothScroll">Top</a> 
+				<a href="https://www.facebook.com/soulfulnonprophet/" target="_blank"><img class="socialmedia" src="images/fbookicon.png"/></a>
+				<a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="images/instacon.png"/></a>
+				<a href="https://twitter.com/SoulfulNProphet" target="_blank"><img class="socialmedia" src="images/twitlogo.png"/></a>
+
+
+			</footer>
+
+		</div>
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/smoothscroll.js"></script>
+		<script>
+			$(document).ready(function() {
+				var $menuButton = $('#menu-button')
+				var $menuLinks = $('#menu-links')
+
+				$menuButton.on('click', function(e) {
+					$menuLinks.slideToggle()
+					$menuButton.toggleClass('close')
+				})
+			})
+		</script>
+
+	</body>
+
+
+</html>
